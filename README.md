@@ -1,2 +1,0 @@
-# EJERCICIOnumeromasgrande
-Created with CodeSandbox

@@ -13,16 +13,16 @@ rotulo1.innerHTML = "Ingrese primer cifra";
 rotulo2.innerHTML = "Ingrese segunda cifra";
 rotulo3.innerHTML = "Ingrese tercer cifra";
 
-let cifra1: number = document.getElementById("dato1");
-let cifra2: number = document.getElementById("dato2");
-let cifra3: number = document.getElementById("dato3");
-
 btnEnviar.addEventListener("click", () => {
-  if (cifra1 > cifra2 && cifra1 > cifra3) {
-    console.log("La" + cifra1 + "es la mayor");
-  } else if (cifra2 > cifra1 && cifra2 > cifra3) {
-    console.log("La" + cifra2 + "es la mayor");
-  } else if (cifra3 > cifra1 && cifra3 > cifra2) {
-    console.log("La" + cifra3 + "es la mayor");
+  let numero1: number = Number(dato1.value);
+  let numero2: number = Number(dato2.value);
+  let numero3: number = Number(dato3.value);
+
+  if (numero1 > numero2 && numero1 > numero3) {
+    console.log("El " + numero1 + " es el mayor");
+  } else if (numero2 > numero1 && numero2 > numero3) {
+    console.log("El " + numero2 + " es el mayor");
+  } else if (numero3 > numero1 && numero3 > numero2) {
+    console.log("El " + numero3 + " es el mayor");
   }
 });
